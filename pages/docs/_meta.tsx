@@ -62,6 +62,7 @@ export default {
   "agentic-automations": "Agentic Automations",
   "root-cause-analysis": "Root Cause Analysis",
   "mcp": "MCP Server",
+  "mixpanel-headless": "Mixpanel Headless",
   "business-context": "Business Context",
   admin: {
     type: "separator",
