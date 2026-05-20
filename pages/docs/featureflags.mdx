@@ -46,13 +46,13 @@ Users will not be reassigned different variants when purely increasing overall r
 We support the following types of Flags:
 
 1. **Feature Gate** : Toggle a feature on or off for targeted users or all users. Useful for phased or controlled rollout.
-2. [**Experiment**](/docs/experiments) : Deliver different variant experiences (e.g., layouts, flows, pricing) to a targeted group of users. Enables measuring and analyzing impact.
+2. [**Experiment**](/docs/experiments) : Deliver different variant experiences (e.g., layouts, flows, pricing) to a targeted group of users. Enables measuring and analyzing impact. Each variant can optionally carry a **string** or **JSON object** value, letting you ship per-variant configuration (e.g., a CTA label, a layout config blob) alongside the variant name. See [Experiment JSON Parameters](/docs/experiments#experiment-json-parameters).
 3. **Dynamic Config** : Configure features with flexible key-value pairs instead of just on/off. It lets you:
-    - Pass JSON payloads (e.g., `{"cta_text": "Buy now", "discount": 20}`) to customize behavior or UI dynamically
+    - Pass **string** or **JSON object** payloads (e.g., `"Buy now"` or `{"cta_text": "Buy now", "discount": 20}`) to customize behavior or UI dynamically
     - Update values instantly without redeploying code
 
     <Callout type="info">
-        The JSON payload for Dynamic Config has a size limit of 32 KB.
+        Variant values (used by both Experiment and Dynamic Config flags) have a size limit of 32 KB per variant. Within a single flag, all variants must use the same value type — either all string or all JSON object and you can switch the type later from the flag's settings.
     </Callout>
 
 

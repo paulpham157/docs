@@ -73,6 +73,31 @@ Mixpanel has set default automatic configurations, seen below. If required, plea
 2. **Confidence Threshold**: 95%
 3. **Experiment Start Date**: Date of the first user exposed to the experiment
 
+### Experiment JSON Parameters
+
+Each variant can optionally carry a **value** in addition to its name — either a **string** or a **JSON object**. The variant name is what your code switches on to render the right experience. The value is configuration data the SDK returns alongside the assignment, so you can remotely control parameters of your app or site (copy, colors, thresholds, layout configs, pricing, etc.) without a code deploy.
+
+For example, a variant named `treatment` might carry a JSON object value like:
+
+```json
+{
+  "cta_text": "Limited time — Buy now",
+  "discount": 20,
+  "layout": "grid"
+}
+```
+
+Your client code reads the value from the SDK alongside the variant name. In the JavaScript SDK:
+
+```javascript
+const fallback = { cta_text: "Buy now", discount: 0, layout: "list" };
+const config = await mixpanel.flags.get_variant_value("checkout-promo", fallback);
+
+renderCheckout(config.cta_text, config.discount, config.layout);
+```
+
+See the [JavaScript Feature Flags guide](/docs/tracking-methods/sdks/javascript/javascript-flags) for the full SDK reference.
+
 ### Changing Settings Mid-Experiment
 
 Mixpanel analyzes your experiment on the fly, so you can adjust settings at any time if needed. If you notice a configuration mistake - like selecting Frequentist when you meant Sequential - feel free to correct it, even if the experiment has been running for weeks.
