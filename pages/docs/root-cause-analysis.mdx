@@ -14,13 +14,14 @@ Mixpanel's **AI-Powered Root Cause Analysis (RCA)** feature does that work for y
 
 ## How it works
 
-When you run an RCA, Mixpanel will immediately launch a new board, then expose its reasoning as it works through the data:
-1. **Validates the anomaly.** The agent first investigates there really is a meaningful change to explain.
-2. **Selects properties to analyze.** RCA combines properties you've prioritized for your project with properties Mixpanel suggests based on the event being analyzed.
-3. **Runs breakdown queries.** The agent runs the breakdowns it needs to find which dimensions actually moved.
-4. **Streams cards into a Board.** As each step finishes, a new card appears on the RCA Board — you'll see a live progress banner at the top while the agent is still working.
-5. **Writes an interpretation.** When the analysis is complete, the Board includes contribution factor analysis, ranked dimensions, an AI-written interpretation of what likely caused the change, a confidence level, and AI-suggested next steps.
-6. **Asks for feedback.** Every generated Board includes a thumbs-up / thumbs-down feedback widget so you can tell us when RCA got it right (or didn't). Feedback drives quality improvements.
+When you run an RCA, Mixpanel immediately launches a new Board and exposes the agent's reasoning as it works:
+
+1. **Validates the anomaly.** Confirms there's a meaningful change to explain before going further.
+2. **Selects properties to analyze.** An LLM agent picks which properties to break down on, combining properties Mixpanel suggests for the event with any you've prioritized in [Custom RCA Settings](#custom-rca-settings). It spreads picks across plausible cause categories (acquisition, audience, platform, data quality, user identity), filters out high-cardinality identifiers and near-duplicates, and factors in your project's business context.
+3. **Runs breakdowns.** Executes the chosen breakdowns to see which segments actually moved.
+4. **Writes an interpretation.** Fills the Board with contribution factor analysis, ranked dimensions, an AI-written explanation of the likely cause, a confidence level, and suggested next steps.
+
+Cards stream into the Board as each step completes, with a live progress banner at the top while the agent is still working.
 
 ## Where to launch RCA
 
