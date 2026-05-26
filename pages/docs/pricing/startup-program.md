@@ -7,7 +7,7 @@ The Mixpanel for Startups program empowers early-stage companies to easily track
 - Haven't previously redeemed other Mixpanel offers.
 - Haven’t been on a paid plan. 
 
-Eligible startups receive their first year free on the Startup Plan, an exclusive offering for startup program participants. The Startup Plan allows you to take advantage of the full analytics capabilities of Mixpanel, without any feature limits. This includes access to all advanced reports such as [Signal](https://docs.mixpanel.com/docs/reports/apps/signal) and [Experiments](https://docs.mixpanel.com/docs/reports/apps/experiments), our add-on packages (Data Pipelines, Group Analytics, Warehouse Connectors), and Session Replays. The Startup Plan covers data volumes of up to 1 billion events per year. With the Startup Plan, unlock all the power of Mixpanel you'll need to launch, grow, and scale your product.
+Eligible startups receive their first year free on the Startup Plan, an exclusive offering for startup program participants. The Startup Plan allows you to take advantage of the full analytics capabilities of Mixpanel, without any feature limits. This includes access to all advanced reports such as [Signal](/docs/reports/apps/signal) and [Experiments](/docs/experiments), our add-on packages (Data Pipelines, Group Analytics, Warehouse Connectors), and Session Replays. The Startup Plan covers data volumes of up to 1 billion events per year. With the Startup Plan, unlock all the power of Mixpanel you'll need to launch, grow, and scale your product.
 
 In order to maintain status in the program, participants must begin sending data to Mixpanel within 90 days of acceptance. If you are not ready to begin implementation, we encourage you to wait and apply once ready.
 
@@ -81,7 +81,7 @@ Prior to September 2024, the Mixpanel for Startups program provided eligible sta
 After acceptance to the program, \$50,000 in credits were added to participants’ Mixpanel account and automatically applied to eligible line items when purchasing an annual [Growth plan](https://mixpanel.com/pricing/#edit-plan) via our plan-builder. The credits cover up to \$50,000 in total usage within the first year. Any additional usage costs in excess of \$50,000 are not covered by the program and will be charged to the credit card on file.
 
 #### Is eligibility different for the credit-based startup program?
-No. The startup program – be it the credit or Startup Plan version – have the same eligibility requirements ([outlined above](https://docs.mixpanel.com/docs/pricing/startup-program#eligibility-criteria)).
+No. The startup program – be it the credit or Startup Plan version – have the same eligibility requirements ([outlined above](/docs/pricing/startup-program#eligibility-criteria)).
 
 #### How do I know if I am in the credit-based startup program?
 The credit-based startup program was valid prior to September 4, 2024. If you are currently in this version of the program, \$50,000 worth of credits were added to your account to apply to eligible purchases and upgrades made in your first year. You can see these credits in your Mixpanel account under Organization Settings > Plan Details & Billing.

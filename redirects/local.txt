@@ -56,6 +56,7 @@
 /docs/boards/advanced /docs/boards
 /docs/boards/overview /docs/boards
 /docs/cohort-sync/overview /docs/cohort-sync
+/docs/cohorts /docs/users/cohorts
 /docs/data-pipelines/integrations/amazon-s3 /docs/data-pipelines/old-pipelines/integrations/schematized-aws-pipeline
 /docs/data-pipelines/integrations/aws-raw-pipeline /docs/data-pipelines/integrations/raw-aws-pipeline
 /docs/data-pipelines/integrations/azure-raw-pipeline /docs/data-pipelines/integrations/raw-azure-pipeline
@@ -72,7 +73,9 @@
 /docs/debugging/distinct-id-limits /docs/tracking-best-practices/hot-shard-limits
 /docs/debugging/overview /docs/tracking-best-practices/debugging
 /docs/features/revenue_analytics /guides/launch/revenue-analytics
+/docs/features/saved-behaviors /docs/features/saved-metrics-and-behaviors
 /docs/features/session-replay /docs/session-replay
+/docs/feature-flags/runtime-events /docs/featureflags
 /docs/formulas /changelogs/2023-09-19-formulas
 /docs/funnels /docs/reports/funnels
 /docs/getting-started /docs/what-is-mixpanel
@@ -84,7 +87,9 @@
 /docs/how-it-works/infrastructure https://engineering.mixpanel.com/under-the-hood-of-mixpanels-infrastructure-0c7682125e9b
 /docs/implement-mixpanel /docs/what-is-mixpanel
 /docs/insights /docs/reports/insights
+/docs/integration-libraries/javascript-full-%20api /docs/tracking-methods/sdks/javascript
 /docs/javascript /docs/tracking-methods/sdks/javascript
+/docs/migration/flurry /docs/migration
 /docs/migration/overview /docs/migration
 /docs/orgs-and-projects/overview /docs/orgs-and-projects
 /docs/other-bits/cohort-syncs/airship /docs/cohort-sync/integrations/airship
@@ -171,6 +176,7 @@
 /docs/reports/funnels#counting-method /docs/reports/funnels#measurements
 /docs/reports/overview /docs/reports
 /docs/reports/segmentation /docs/reports/insights
+/docs/reports/apps/experiments /docs/experiments
 /docs/session-replay/session-replay-web#server-side-stitching-beta /docs/session-replay#server-side-stitching
 /docs/session-replay/session-replay-web /docs/session-replay/implement-session-replay/session-replay-web
 /docs/session-replay/session-replay-ios /docs/session-replay/implement-session-replay/session-replay-ios
@@ -285,6 +291,7 @@
 /guides/plan/setup /guides/strategic-playbooks/onboarding-playbook/plan/setup
 /guides/plan/framework /guides/strategic-playbooks/onboarding-playbook/plan/framework
 /guides/plan/tracking-strategy /guides/strategic-playbooks/onboarding-playbook/plan/tracking-strategy
+/guides/playbooks/project-migration /guides/strategic-playbooks/project-migration
 /guides/implement/send-your-data /guides/strategic-playbooks/onboarding-playbook/implement/send-your-data
 /guides/implement/qa-data-audit /guides/strategic-playbooks/onboarding-playbook/implement/qa-data-audit
 /guides/implement/establish-governance /guides/strategic-playbooks/onboarding-playbook/implement/establish-governance
@@ -307,3 +314,5 @@
 /guides/strategic-playbooks/onboarding-playbook/launch/define-cohorts /guides/guides-by-topic/core-reports/define-cohorts
 /guides/strategic-playbooks/onboarding-playbook/launch/track-user-retention /guides/guides-by-topic/core-reports/track-user-retention
 /guides/strategic-playbooks/onboarding-playbook/launch/revenue-analytics /docs/features/revenue-analytics
+/troubleshooting/docs/features/sessions /docs/features/sessions
+/troubleshooting/docs/tracking-best-practices/traffic-attribution /docs/tracking-best-practices/traffic-attribution

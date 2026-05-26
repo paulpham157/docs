@@ -194,7 +194,7 @@ https://help.mixpanel.com/hc/en-us/articles/360035109991(.*) /docs/best-practice
 https://help.mixpanel.com/hc/en-us/articles/360035583452(.*) /docs/cohort-sync/integrations/facebook-ads
 https://help.mixpanel.com/hc/en-us/articles/360036428871(.*) /docs/access-security/single-sign-on
 https://help.mixpanel.com/hc/en-us/articles/360036438351(.*) /docs/reports/flows
-https://help.mixpanel.com/hc/en-us/articles/360038439952(.*) /docs/reports/apps/experiments
+https://help.mixpanel.com/hc/en-us/articles/360038439952(.*) /docs/experiments
 https://help.mixpanel.com/hc/en-us/articles/360039133851(.*) /docs/tracking-methods/id-management/identifying-users
 https://help.mixpanel.com/hc/en-us/articles/360039135652(.*) /docs/privacy/eu-residency
 https://help.mixpanel.com/hc/en-us/articles/360039256492(.*) /docs/cohort-sync/integrations/google-ads

@@ -91,14 +91,14 @@ Control variant by is always set to non-sticky. This is to ensure this is the on
 
 Feature flags may consist of one or more rollout groups. Users are evaluated against each rollout group in order until one is found that the user qualifies for.
 
-You can target 'All Users', or optionally target rollout of your feature flags to subsets of your user base rather than to all your users with [Cohorts](https://docs.mixpanel.com/docs/cohorts).
+You can target 'All Users', or optionally target rollout of your feature flags to subsets of your user base rather than to all your users with [Cohorts](/docs/users/cohorts).
 These are dynamic audiences of Mixpanel users based on user behavior or properties. Use these to target feature flags to specific subsets of your user base. For example, target only users who did 5 purchases in the last week.
 
 **Group Cohort Targeting**
 
 When the Variant Assignment Key is set to a group key (e.g., `company_id`, `account_id`), targeting uses **group cohorts** instead of user cohorts. Group cohorts are cohorts of entities matching the group key — for example, a cohort of Companies for a flag keyed on `company_id`.
 
-- Group cohorts are created in the same [cohort builder](/docs/cohorts), scoped to the relevant group key.
+- Group cohorts are created in the same [cohort builder](/docs/users/cohorts), scoped to the relevant group key.
 - The cohort builder automatically corresponds to the the flag's assignment key.
 - Example: A flag with assignment key `company_id` lets you target a cohort like "Enterprise companies with >50 seats."
 
