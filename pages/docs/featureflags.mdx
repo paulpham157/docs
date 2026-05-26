@@ -196,6 +196,22 @@ This shows the history of changes related to the flag. This allows you to know t
 
 This section allows you to whitelist users who will receive the experience, vs rolling out more broadly. You can select users based on the $email user profile property. Once selected, you can specify which experience you would like each user to get. 
 
+> #### 📝 Note: Selecting QA testers on Original ID Merge
+>
+> This behavior applies only to projects on **Original ID Merge (V2)**. Projects on **Simplified ID Merge (V3)** use a deterministic canonical user ID and do not require manual QA tester maintenance.
+>
+> When you add a user as a QA tester (by email or distinct_id), Mixpanel saves a snapshot of that user's **most recent `$identified_id`** at the moment of addition, pulled from their `$identify` event history. At flag evaluation time, the `/flags/` endpoint performs an exact string match between the distinct_id your SDK sends and this saved value — there is no cluster-aware resolution at runtime.
+>
+> **What this means:** if the user later identifies with a different ID than what was saved (e.g., your app's identification logic changes, the user transitions between anonymous and identified states, or your hashing scheme is updated), the saved QA tester record becomes stale, and the flag will no longer return for that user.
+>
+> **To recover:** remove the QA tester from the flag's configuration and re-add them. The latest `$identified_id` will be snapshotted again.
+>
+> **Best practice:**
+> - Call `identify()` with a stable, consistent value for each logged-in user across sessions.
+> - Add QA testers only after the target user has identified at least once with that stable value.
+>
+> **Debugging tip:** to verify which ID was saved for a QA tester, inspect the `/flags/` network request in your browser's developer tools. The response payload includes a `test_users` field listing the saved IDs. Compare these against the `distinct_id` your SDK is sending — if they don't match, that's the source of the issue. You can also see this in the dropdown when searching for users.
+
 ### Testing Environment
 
 Use separate Mixpanel projects, which are connected to your different environments, to reduce risk and promote safety. You might have just 1 or 2 of these, which is also fine:
