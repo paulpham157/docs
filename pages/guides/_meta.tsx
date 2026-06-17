@@ -56,7 +56,12 @@ export default {
     title: "MCP Integration",
     href: "/guides/guides-by-use-case/empower-your-team/mcp/integrations",
     newWindow: false
-  },
+    },
+  "mixpanel-headless": {
+      title: "Use Mixpanel Headless",
+      href: "/guides/guides-by-use-case/empower-your-team/headless",
+      newWindow: false
+    },
   "best-practices-and-playbooks": {
     type: "separator",
     title: (
