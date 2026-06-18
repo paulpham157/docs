@@ -11,6 +11,5 @@ export default {
 "revenue-analytics": "Revenue Analytics",
     "saved-metrics-and-behaviors": "Saved Metrics & Behaviors",
     "sessions": "Sessions",
-    "slack-integration": "Slack Integration",
-    "spark": "Spark"
+    "slack-integration": "Slack Integration"
 }

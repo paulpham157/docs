@@ -316,3 +316,4 @@
 /guides/strategic-playbooks/onboarding-playbook/launch/revenue-analytics /docs/features/revenue-analytics
 /troubleshooting/docs/features/sessions /docs/features/sessions
 /troubleshooting/docs/tracking-best-practices/traffic-attribution /docs/tracking-best-practices/traffic-attribution
+/docs/features/spark /docs/mixpanel-agent
